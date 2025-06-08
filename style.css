@@ -1,0 +1,142 @@
+body {
+  background: #111;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #5faaff;
+  margin-bottom: 20px;
+}
+
+.option {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  max-height: 80px;
+  cursor: pointer;
+}
+
+.option input {
+  display: none;
+}
+
+.option.active {
+  max-height: 300px;
+}
+
+.main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  background: #5faaff;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #5faaff;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.price {
+  text-align: right;
+}
+
+.price s {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.dropdowns {
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option.active .dropdowns {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.row label {
+  width: 25px;
+}
+
+select {
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #5faaff;
+}
+
+.total {
+  font-weight: bold;
+  color: #000;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 15px;
+  background: #5faaff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.powered {
+  font-size: 12px;
+  text-align: center;
+  color: #888;
+  margin-top: 10px;
+}
